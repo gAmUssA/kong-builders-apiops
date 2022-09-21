@@ -14,9 +14,6 @@ jobs:
         uses: actions/checkout@v2
       - uses: kong/setup-inso@v1
         name: setup inso
-        with:
-          inso-version: 3.4.0
-          wrapper: true
 #      - run: inso --version
       - name: inso lint
         run: inso lint spec spc_cd1564
