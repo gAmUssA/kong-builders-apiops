@@ -12,8 +12,11 @@ jobs:
     steps:
       - name: clone and checkout
         uses: actions/checkout@v2
-      - uses: kong/setup-inso@v1
-        name: setup inso
-#      - run: inso --version
+#      - uses: kong/setup-inso@v1
+      - name: setup inso
+      - run: | 
+          npm install --global insomnia-inso
+          inso --version
+        
       - name: inso lint
         run: inso lint spec spc_cd1564
