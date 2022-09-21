@@ -1,7 +1,7 @@
 _id: spc_cd1564f336bf411e98299019d6a3bb05
 type: ApiSpec
 parentId: wrk_fe485e8afa604c30b97abbc29e6c9580
-modified: 1663776560196
+modified: 1663778705179
 created: 1663776534731
 fileName: "🦍 Kong Builders APIOps "
 contents: >+
@@ -57,7 +57,7 @@ contents: >+
         tags:
           - sessions
         responses:
-          200:
+          '200':
             description: OK
             content:
               application/json:
@@ -72,7 +72,7 @@ contents: >+
                       presenters:
                         - Viktor Gamov
                       date: 2022-04-12
-          404:
+          '404':
             description: Not Found
             content:
               application/json:
