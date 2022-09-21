@@ -1,0 +1,21 @@
+# 
+# install inso 
+# run inso validate 
+
+name: inso for linting
+
+on: push
+
+jobs:
+  inso-lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: clone and checkout
+        uses: actions/checkout@v2
+      - uses: kong/setup-inso@v1
+        name: setup inso
+        with:
+          inso-version: 3.5.0
+      - run: inso --version
+      - name: inso lint
+        run: inso lint spec spc_cd1564
