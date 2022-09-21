@@ -15,7 +15,7 @@ jobs:
       - uses: kong/setup-inso@v1
         name: setup inso
         with:
-          inso-version: 3.5.0
+          inso-version: 3.4.0
           wrapper: true
 #      - run: inso --version
       - name: inso lint
